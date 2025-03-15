@@ -1,65 +1,54 @@
-README - رفيق
+# Rafiq 🕌✨
 
-Overview
+## Overview
+**"Rafiq"** is an Islamic website designed to assist users in their daily spiritual journey. It offers various features like prayer timings, daily hadiths, task management, and multimedia content to enhance faith and connection with Islamic teachings.
 
-"رفيق" is an Islamic website designed to assist users in their daily spiritual journey. It provides various features such as daily prayers, prophetic traditions, task management, and multimedia content to enhance the user's faith and connection with Islamic teachings.
+## Features 🌟
+- **🕋 Prayer Timings:** Displays accurate prayer times for users based in Egypt.
+- **📜 Daily Hadiths & Teachings:** Provides daily hadiths and guidance based on the Prophet Muhammad’s ﷺ routine.
+- **📝 To-Do List:** A built-in task manager to track daily religious practices.
+- **🤲 Azkar & Supplications:** Includes morning and evening azkar, tasbih, and bedtime prayers.
+- **🎧 Multimedia Section:** Offers Islamic audio and video content for deeper understanding.
+- **📚 Books Section:** Provides access to translated Islamic books.
 
-Features
+## File Structure 📂
+```
+📦 Rafiq
+├── 📄 index.html         # Homepage
+├── 📄 todo.html          # Daily task management page
+├── 📄 المرايات.html      # Multimedia page (Islamic videos)
+├── 📂 css
+│   └── 🎨 styles.css     # Website styling
+├── 📂 JS
+│   └── ⚡ main.js        # JavaScript functionalities
+└── 📂 images             # Assets and icons
+```
 
-Prayer Timings: Displays accurate prayer times for users based in Egypt.
+## Technologies Used 🛠️
+- **HTML5** - Structuring web pages
+- **CSS3** - Styling and layout
+- **JavaScript** - Interactivity and user engagement
+- **Google Fonts & Font Awesome** - Enhanced typography and icons
 
-Daily Hadiths & Islamic Teachings: Provides hadiths and guidance based on the Prophet Muhammad's ﷺ daily routine.
+## Installation & Usage 🚀
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AbdalrahmanEmara/Rafiq.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd Rafiq
+   ```
+3. **Open `index.html` in any web browser.**
+4. Ensure an internet connection for external resources like Google Fonts and Font Awesome.
 
-To-Do List: A built-in task management system to help users track their daily religious practices.
+## Future Improvements 🔮
+- ✅ Integration of real-time **prayer time API**
+- ✅ User **authentication** for personalized content
+- ✅ Mobile-friendly enhancements 📱
 
-Azkar & Supplications: Includes morning and evening azkar, tasbih, and bedtime prayers.
+## License 📜
+This project is **open-source** and can be modified and distributed freely.
 
-Multimedia Section: Offers Islamic audio and video content for a better understanding of religious teachings.
-
-Books Section: Provides access to translated Islamic books.
-
-File Structure
-
-index.html: The homepage of the website.
-
-todo.html: The daily task management page.
-
-المرايات.html: The multimedia page featuring Islamic videos.
-
-css/styles.css: Contains the styling for the website.
-
-JS/main.js: JavaScript functionalities including interactive elements.
-
-images/: Directory containing assets and icons used in the website.
-
-Technologies Used
-
-HTML5 for structuring web pages.
-
-CSS3 for styling and layout.
-
-JavaScript for interactivity and user engagement.
-
-Google Fonts & Font Awesome for enhanced typography and icons.
-
-Installation & Usage
-
-Download or clone the repository.
-
-Open index.html in any web browser.
-
-Ensure an internet connection for external resources such as Google Fonts and Font Awesome.
-
-Future Improvements
-
-Integration of real-time prayer time API.
-
-User authentication for personalized content.
-
-Mobile-friendly enhancements.
-
-License
-
-This project is open-source and can be modified and distributed freely.
-
-Credits
+---
+**Made with ❤️ for the Islamic community**
