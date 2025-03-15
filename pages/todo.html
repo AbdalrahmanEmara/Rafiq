@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafiq</title>
+  <link rel="icon" href="images/title.png" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- logo font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+      <div class="container flex-between">
+        <div class="logo">
+          <a href="../index.html"><img src="../imgs/11.png" alt=""></a>
+        </div>
+        <nav>
+          <ul class=" flex-between ">
+            <li><a href="dayRules.html">النهج المحمدي</a></li>
+            <li><a href="اذكارالصباح.html">الأذكار</a></li>
+            <li><a href="todo.html">قائمة المهام اليومية</a></li>
+            <li><a href="المرايات.html">المرئيات</a></li>
+            <li><a href="books.html">الكتب المترجمة</a></li>
+          </ul>
+          <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+      <!-- toggle -->
+      <ul class="dropdown-menu">
+        <li><a href="dayRules.html">النهج المحمدي</a></li>
+        <li><a href="اذكارالصباح.html">الأذكار</a></li>
+        <li><a href="todo.html">قائمة المهام اليومية</a></li>
+        <li><a href="المرايات.html">المرئيات</a></li>
+        <li><a href="books.html">الكتب المترجمة</a></li>
+      </ul>
+    </header>
+  <div class="to-do">
+    <h1>قائمة مهامي اليوميه</h1>
+    <div class="todo-container">
+      <div class="status-container">
+        <div class="details">
+          <p>اقتدِ بالنبي ﷺ خلال يومك وأكمل عباداتك خطوة بخطوة. تابع إنجازك واستمتع بيوم مليء بالخير والبركة!</p>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="status-numbers">
+          <p id="numbers">
+            1 / 1
+          </p>
+        </div>
+      </div>
+
+      <form action="">
+        <input type="text" name="" id="taskInput" placeholder="أضف عبادة جديدة...">
+        <button type="submit" id="newTask">+</button>
+      </form>
+
+      <ul class="task-list">
+
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col">
+        <div class="footer-logo"><span>رفيق</span></div>
+        <div class="links">
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <p>اجعل رمضانك مختلفًا هذا العام وسِر على خطى المصطفى ﷺ يومًا بيوم. ابدأ رحلتك الايمانيه مع "رفيق" وكن
+          أقرب إلى الله في
+          كل
+          لحظة
+        </p>
+      </div>
+      <div class="col">
+        <h3>
+          عن رفيق
+        </h3>
+        <ul>
+          <li><a href="mohamed.html">النهج المحمدي</a></li>
+          <li><a href="azcar.html">الأذكار</a></li>
+          <li><a href="hadeth.html">الأحاديث</a></li>
+          <li><a href="todo.html">قائمة المهام يومية</a></li>
+          <li><a href="books.html">الكتب</a></li>
+          <li><a href="voice.html">الصوتيات</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          المزيد
+        </h3>
+        <ul>
+          <li><a href="#">سياسة الخصوصيه</a></li>
+          <li><a href="#">سياسات ملفات الارتباط</a></li>
+          <li><a href="#">خدمات اخرى</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="copy">
+      <h5><span>رفيق</span> جميع الحقوق محفوظة © 2025</h5>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const storedTasks = JSON.parse(localStorage.getItem("tasks"));
+      if (storedTasks) {
+        storedTasks.forEach((task) => tasks.push(task));
+        updateTasksList();
+        updateProgress();
+      }
+    });
+    let tasks = [];
+    const saveTasks = () => {
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+    };
+
+    const addTask = () => {
+      const taskInput = document.getElementById("taskInput");
+      const text = taskInput.value.trim();
+
+      if (text) {
+        tasks.push({ text: text, completed: false });
+        updateTasksList();
+        taskInput.value = "";
+        saveTasks();
+      }
+    };
+
+    const updateTasksList = () => {
+      const taskList = document.querySelector(".task-list");
+      taskList.innerHTML = "";
+      tasks.forEach((task, index) => {
+        const listItem = document.createElement("li");
+
+        listItem.innerHTML = `
+            <div class="taskItem">
+                <div class="task ${task.completed ? "completed" : ""}">
+                    <input type='checkbox' class='checkbox' ${task.completed ? "checked" : ""
+          } />
+                    <p>${task.text}</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-pen-to-square edit-btn" data-index="${index}"></i>
+                    <i class="fa-solid fa-trash delete-btn" data-index="${index}"></i>
+                </div>
+            </div>
+        `;
+
+        taskList.append(listItem);
+      });
+
+      document.querySelectorAll(".checkbox").forEach((checkbox, i) => {
+        checkbox.addEventListener("change", () => toggleTaskComplete(i));
+      });
+
+      document.querySelectorAll(".edit-btn").forEach((btn, i) => {
+        btn.addEventListener("click", () => editTask(i));
+      });
+
+      document.querySelectorAll(".delete-btn").forEach((btn, i) => {
+        btn.addEventListener("click", () => deleteTask(i));
+      });
+
+      updateProgress();
+    };
+
+    // complete task
+    const toggleTaskComplete = (index) => {
+      tasks[index].completed = !tasks[index].completed;
+      updateTasksList();
+      saveTasks();
+    };
+
+    // edit task
+    const editTask = (index) => {
+      const taskInput = document.getElementById("taskInput");
+      taskInput.value = tasks[index].text;
+
+      tasks.splice(index, 1);
+      updateTasksList();
+      saveTasks();
+    };
+
+    // delete task
+    const deleteTask = (index) => {
+      tasks.splice(index, 1);
+      updateTasksList();
+      saveTasks();
+    };
+
+    // progress bar
+    const updateProgress = () => {
+      const completedTasks = tasks.filter((task) => task.completed).length;
+      const totalTasks = tasks.length;
+      const progressBar = document.getElementById("progress");
+      const numbers = document.getElementById("numbers");
+
+      if (totalTasks > 0) {
+        const percentage = (completedTasks / totalTasks) * 100;
+        progressBar.style.width = `${percentage}%`;
+        numbers.textContent = `${totalTasks} / ${completedTasks}  `;
+      } else {
+        progressBar.style.width = "0%";
+        numbers.textContent = "0 / 0";
+      }
+      if (tasks.length && completedTasks === totalTasks) {
+        boomEffect();
+      }
+    };
+
+    // add task button
+    document.getElementById("newTask").addEventListener("click", function (e) {
+      e.preventDefault();
+      addTask();
+    });
+    // celebration effect
+    const boomEffect = () => {
+      const defaults = {
+        spread: 360,
+        ticks: 50,
+        gravity: 0,
+        decay: 0.94,
+        startVelocity: 30,
+        shapes: ["star"],
+        colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+      };
+
+      function shoot() {
+        confetti({
+          ...defaults,
+          particleCount: 40,
+          scalar: 1.2,
+          shapes: ["star"],
+        });
+
+        confetti({
+          ...defaults,
+          particleCount: 10,
+          scalar: 0.75,
+          shapes: ["circle"],
+        });
+      }
+
+      setTimeout(shoot, 0);
+      setTimeout(shoot, 100);
+      setTimeout(shoot, 200);
+    };
+  </script>
+  <script src="../JS/main.js"></script>
+</body>
+
+</html>

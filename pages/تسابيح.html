@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiq</title>
+    <link rel="icon" href="images/title.png" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body dir="rtl">
+
+    <header>
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="../index.html"><img src="../imgs/11.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class=" flex-between ">
+                    <li><a href="dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="المرايات.html">المرئيات</a></li>
+                    <li><a href="books.html">الكتب المترجمة</a></li>
+                </ul>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- toggle -->
+        <ul class="dropdown-menu">
+            <li><a href="dayRules.html">النهج المحمدي</a></li>
+            <li><a href="اذكارالصباح.html">الأذكار</a></li>
+            <li><a href="todo.html">قائمة المهام اليومية</a></li>
+            <li><a href="المرايات.html">المرئيات</a></li>
+            <li><a href="books.html">الكتب المترجمة</a></li>
+        </ul>
+    </header>
+
+    <section class="azkar-section">
+
+        <h1 class="azkar-title">📖 تسابيح</h1>
+        <div class="container-azkar" id="azkarContainer"></div>
+    </section>
+
+    <script>
+        // JSON data for Azkar
+        const azkarSabah = [
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "يكتب له ألف حسنة أو يحط عنه ألف خطيئة.",
+                reference: "",
+                content: "سُبْحَانَ اللَّهِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ. لَمْ يَأْتِ أَحَدٌ يَوْمَ الْقِيَامَةِ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا أَحَدٌ قَالَ مِثْلَ مَا قَالَ أَوْ زَادَ عَلَيْهِ.",
+                reference: "",
+                content: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "تَمْلَآَنِ مَا بَيْنَ السَّمَاوَاتِ وَالْأَرْضِ.",
+                reference: "",
+                content: "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "غرست له نخلة في الجنة.",
+                reference: "",
+                content: "سُبْحَانَ اللهِ العَظِيمِ وَبِحَمْدِهِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "ثقيلتان في الميزان حبيبتان إلى الرحمن.",
+                reference: "",
+                content: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ ، سُبْحَانَ اللَّهِ الْعَظِيمِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "كانت له عدل عشر رقاب، وكتبت له مئة حسنة، ومحيت عنه مئة سيئة، وكانت له حرزا من الشيطان.",
+                reference: "",
+                content: "لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلُّ شَيْءِ قَدِيرِ."
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "كنز من كنوز الجنة.",
+                reference: "",
+                content: "لا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "تملأ ميزان العبد بالحسنات.",
+                reference: "",
+                content: "الْحَمْدُ للّهِ رَبِّ الْعَالَمِينَ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "من صلى على حين يصبح وحين يمسى ادركته شفاعتى يوم القيامة.",
+                reference: "",
+                content: "الْلَّهُم صَلِّ وَسَلِم وَبَارِك عَلَى سَيِّدِنَا مُحَمَّد"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "لفعل الرسول صلى الله عليه وسلم.",
+                reference: "",
+                content: "أستغفر الله"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "أنهن أحب الكلام الى الله، ومكفرات للذنوب، وغرس الجنة، وجنة لقائلهن من النار، وأحب الى النبي عليه السلام مما طلعت عليه الشمس، والْبَاقِيَاتُ الْصَّالِحَات.",
+                reference: "",
+                content: "سُبْحَانَ الْلَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا الْلَّهُ، وَالْلَّهُ أَكْبَرُ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "أفضل الذكر لا إله إلاّ الله.",
+                reference: "",
+                content: "لَا إِلَهَ إِلَّا اللَّهُ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "من قال الله أكبر كتبت له عشرون حسنة وحطت عنه عشرون سيئة. الله أكبر من كل شيء.",
+                reference: "",
+                content: "الْلَّهُ أَكْبَرُ"
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "خير الدنيا والآخرة",
+                reference: "",
+                content: "سُبْحَانَ اللَّهِ ، وَالْحَمْدُ لِلَّهِ ، وَلا إِلَهَ إِلا اللَّهُ ، وَاللَّهُ أَكْبَرُ ، اللَّهُمَّ اغْفِرْ لِي ، اللَّهُمَّ ارْحَمْنِي ، اللَّهُمَّ ارْزُقْنِي."
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "قَالَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ \"عَجِبْتُ لَهَا ، فُتِحَتْ لَهَا أَبْوَابُ السَّمَاءِ",
+                reference: "",
+                content: "اللَّهُ أَكْبَرُ كَبِيرًا ، وَالْحَمْدُ لِلَّهِ كَثِيرًا ، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً."
+            },
+            {
+                category: "تسابيح",
+                count: "100",
+                description: "في كل مره تحط عنه عشر خطايا ويرفع له عشر درجات ويصلي الله عليه عشرا وتعرض على الرسول صلى الله عليه وسلم.",
+                reference: "",
+                content: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ , وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ , اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ."
+            }
+        ]
+
+        // Function to generate Azkar cards
+        function displayAzkar() {
+            const container = document.getElementById("azkarContainer");
+            azkarSabah.forEach(zekr => {
+                const card = document.createElement("div");
+                card.classList.add("card-azkar");
+
+                card.innerHTML = `
+                    <p class="content-azkar">${zekr.content}</p>
+                    <p class="count-azkar">التكرار: ${zekr.count} مرات</p>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Render cards on page load
+        displayAzkar();
+    </script>
+<script src="../JS/main.js"></script>
+</body>
+
+</html>

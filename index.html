@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiq</title>
+    <link rel="icon" href="images/title.png" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="index.html"><img src="../ramadanProject-main/imgs/11.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class=" flex-between ">
+                    <li><a href="pages/dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="pages/اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="pages/todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="pages/المرايات.html">المرئيات</a></li>
+                    <li><a href="pages/books.html">الكتب المترجمة</a></li>
+                </ul>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- toggle -->
+        <ul class="dropdown-menu">
+            <li><a href="pages/dayRules.html">النهج المحمدي</a></li>
+            <li><a href="pages/اذكارالصباح.html">الأذكار</a></li>
+            <li><a href="pages/todo.html">قائمة المهام اليومية</a></li>
+            <li><a href="pages/المرايات.html">المرئيات</a></li>
+            <li><a href="pages/books.html">الكتب المترجمة</a></li>
+        </ul>
+    </header>
+    <!-- hero section -->
+    <div class="hero flex-center">
+        <div class="container">
+            <div class="content">
+                <div class="main-aya" style="max-width: 450px;">
+                    <h3 class="text-xl text-amber-100">رفيقك في كل وقت</h3>
+                    <h5 class="flex p-20"><img src="imgs/pattern.svg" alt="" style="padding-left: 8px;"> قال تعالى</h5>
+                    <h1 class="">"وَاذْكُرِ اسْمَ رَبِّكَ بُكْرَةً وَأَصِيلًا" [الإنسان: 25] <br><span>صدق الله
+                            العظيم</span>
+                    </h1>
+
+                    <p class="text-2xl">
+                        رفيقك اليومي الذي يذكّرك بالأذكار، يعينك على الصلاة، ويأخذ بيدك للسير على نهج النبي ﷺ.
+                    </p>
+                </div>
+                <div class="prayer-time flex flex-col
+                justify-center max-w-xl">
+                    <div class="prayer-header flex justify-center">
+                        <h1>مواقيت الصلاة</h1>
+                        <span>(مصر)</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>الفجر</span>
+                        <span id="fajr">--:--</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>الشروق</span>
+                        <span id="sunrise">--:--</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>الظهر</span>
+                        <span id="dhuhr">--:--</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>العصر</span>
+                        <span id="asr">--:--</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>المغرب</span>
+                        <span id="maghrib">--:--</span>
+                    </div>
+                    <div class="prayer-head-row">
+                        <span>العشاء</span>
+                        <span id="isha">--:--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prophetDay">
+        <div class="container">
+            <div class="text">
+                <h2 class="titlee">
+                    يوم في حياة النبي ﷺ
+                </h2>
+                <p class="description">
+                    "كيف كان يقضي أعظم الخلق يومه؟ ما السر في بركته وإنجازه رغم كثرة مسؤولياته؟ في هذا المقال، سنبحر معًا في
+                    تفاصيل يوم النبي
+                    ﷺ، لنستلهم منها دروسًا تغير حياتنا."
+                </p>
+            </div>
+            <div class="more-details">
+                <a href="pages/dayRules.html">تعرف عليه</a>
+            </div>
+        </div>
+    </div>
+    <!-- start books section -->
+    <section class="books">
+        <div class="container">
+            <div class="title cxs">
+                <button > <a href="pages/books.html" style="color: white;">عرض المزيد</a></button>
+                <p class="text">الكتب المترجمة  <i class="fa-solid fa-book-quran"></i></p>
+            </div>
+            <div class="swiper mySwiper" style="height: 280px;">
+                <div class="swiper-wrapper">
+                    <!-- slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end books section -->
+
+    <div class="alazkar">
+        <h1 class="main-title">الأذكار</h1>
+        <div class="container">
+
+            <div class="pages">
+                <a href="pages/اذكارالصباح.html">
+                    <div class="image">
+                        <img src="../ramadanProject-main/imgs/blue-mosque-sultan-3840x2160-10849.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="title">أذكار الصباح</h2>
+                        <p class="preef">لتبدأ يومك في طاعة الله</p>
+                    </div>
+                </a>
+                <a href="pages/اذكار المساء.html">
+                    <div class="image">
+                        <img src="../ramadanProject-main/imgs/sheikh-zayed-mosque-abu-dhabi-sheikh-zayed-grand-mosque-3840x2160-8356.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="title">أذكار المساء</h2>
+                        <p class="preef">بها تحصن نفسك في يومك</p>
+                    </div>
+                </a>
+                <a href="pages/تسابيح.html">
+                    <div class="image">
+                        <img src="../ramadanProject-main/imgs/blue-mosque-sultan-3840x2160-10846.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="title">تسابيح</h2>
+                        <p class="preef">بها تحصن نفسك في يومك</p>
+                    </div>
+                </a>
+                <a href="pages/اذكار النوم.html">
+                    <div class="image">
+                        <img src="../ramadanProject-main/imgs/professional HD Naat thumbnail background.jpeg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h2 class="title">أذكار النوم</h2>
+                        <p class="preef">بها تحصن نفسك في يومك</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="hadith">
+        <div class="container">
+            <div class="box">
+                <p class="hadith-intro">قال رسول الله ﷺ</p>
+                <p class="hadith-text">مَن سلَكَ طريقًا يلتَمِسُ فيهِ علمًا ؛ سَهَّلَ اللَّهُ لَهُ بهِ طريقًا إلى
+                    الجنَّةِ</p>
+                <p class="hadith-source">صحيح مسلم</p>
+            </div>
+        </div>
+    </div> -->
+    
+    
+    <!-- start video section -->
+    <section class="video-slider2">
+        <div class="container">
+            <div class="title cxs">
+                <button > <a href="pages/المرايات.html" style="color: white;">عرض المزيد</a></button>
+                <p class="text">المرئيات  <i class="fa-solid fa-star-and-crescent"></i></p>
+            </div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide edit-slide edit-slid">
+                        <iframe class="player slider" src="https://www.youtube.com/embed/HWEu4RhaNIg?si=s5adc4TAgH64lhuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide edit-slide">
+                        <iframe class="player slider" src="https://www.youtube.com/embed/-zMW2Rqjwcc?si=dUFsOrVDi3BkvHF6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide edit-slide">
+                        <iframe class="player slider" src="https://www.youtube.com/embed/COogWP0kKCc?si=dh-1ZTNVZLIR8xrn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide edit-slide">
+                        <iframe class="player slider" src="https://www.youtube.com/embed/FhVv2Ovy0T0?si=WkJ2Wjh5Zv_KJtke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide edit-slide">
+                        <iframe class="player slider" src="https://www.youtube.com/embed/Yu2MXe4EhDA?si=D0Ldgxgy6AGNmli2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next2"></div>
+                <div class="swiper-button-prev swiper-button-prev2"></div>
+                <div class="swiper-pagination swiper-pagination2"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end video section -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="footer-logo"><span>رفيق</span></div>
+                <div class="links">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <p>اجعل رمضانك مختلفًا هذا العام وسِر على خطى المصطفى ﷺ يومًا بيوم. ابدأ رحلتك الايمانيه مع "رفيق" وكن
+                    أقرب إلى الله في
+                    كل
+                    لحظة
+                </p>
+            </div>
+            <div class="col">
+                <h3>
+                    عن رفيق
+                </h3>
+                <ul>
+                    <li><a href="pages/dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="pages/اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="pages/todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="pages/المرايات.html">المرئيات</a></li>
+                    <li><a href="pages/books.html">الكتب المترجمة</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>
+                    المزيد
+                </h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصيه</a></li>
+                    <li><a href="#">سياسات ملفات الارتباط</a></li>
+                    <li><a href="#">خدمات اخرى</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class=" copy">
+            <h5><span>رفيق</span> جميع الحقوق محفوظة © 2025</h5>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html

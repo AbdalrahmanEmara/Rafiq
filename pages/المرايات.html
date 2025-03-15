@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiq</title>
+    <link rel="icon" href="images/title.png" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body dir="rtl">
+    <!-- navbar -->
+    <header>
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="../index.html"><img src="../imgs/11.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class=" flex-between ">
+                    <li><a href="dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="المرايات.html">المرئيات</a></li>
+                    <li><a href="books.html">الكتب المترجمة</a></li>
+                </ul>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- toggle -->
+        <ul class="dropdown-menu">
+            <li><a href="dayRules.html">النهج المحمدي</a></li>
+            <li><a href="اذكارالصباح.html">الأذكار</a></li>
+            <li><a href="todo.html">قائمة المهام اليومية</a></li>
+            <li><a href="المرايات.html">المرئيات</a></li>
+            <li><a href="books.html">الكتب المترجمة</a></li>
+        </ul>
+    </header>
+    <div class="videos">
+        <div class="container">
+            <div class="">
+                <h1 class="main-title" style="margin-top: 0;">المرئيات <i class="fa-solid fa-star-and-crescent"> </i></p>
+            </div>
+            <div class="videos-grid" id="videosGrid">
+                <!-- videos -->
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="container">
+            <div class="">
+                <h1 class="main-title" style="margin-top: 0"> سلاسل المرئيات <i class="fa-solid fa-mosque"></i> </p>
+            </div>
+            <div class="videos-series-grid" id="videosseriesGrid">
+                <!-- videos-series -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="footer-logo"><span>رفيق</span></div>
+                <div class="links">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <p>اجعل رمضانك مختلفًا هذا العام وسِر على خطى المصطفى ﷺ يومًا بيوم. ابدأ رحلتك الايمانيه مع "رفيق" وكن
+                    أقرب إلى الله في
+                    كل
+                    لحظة
+                </p>
+            </div>
+            <div class="col">
+                <h3>
+                    عن رفيق
+                </h3>
+                <ul>
+                    <li><a href="mohamed.html">النهج المحمدي</a></li>
+                    <li><a href="azcar.html">الأذكار</a></li>
+                    <li><a href="hadeth.html">الأحاديث</a></li>
+                    <li><a href="todo.html">قائمة المهام يومية</a></li>
+                    <li><a href="books.html">الكتب</a></li>
+                    <li><a href="voice.html">الصوتيات</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>
+                    المزيد
+                </h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصيه</a></li>
+                    <li><a href="#">سياسات ملفات الارتباط</a></li>
+                    <li><a href="#">خدمات اخرى</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class=" copy">
+            <h5><span>رفيق</span> جميع الحقوق محفوظة © 2025</h5>
+        </div>
+    </footer>
+
+    <script>
+        let videos = [
+            {
+                name: "فاهم 60 | انتصار من رحم الانكسار | مع د. شريف طه يونس",
+                image: "../imgs/v60.png",
+                url: "https://www.youtube.com/watch?v=_iAaHmAdGBw",
+            },
+            {
+                name: "فاهم 59 | فلسفة الصوم | مع الشيخ/ أمجد سمير",
+                image: "../imgs/v59.png",
+                url: "https://www.youtube.com/watch?v=uTj3yNF79YI",
+            },
+            {
+                name: "فاهم 58 | فقه التعامل مع النعم | مع الشيخ/ هيثم سمير",
+                image: "../imgs/v58.png",
+                url: "https://www.youtube.com/watch?v=_85D3CqkoxA",
+            },
+            {
+                name: "فاهم 57 | سلسلة لازم تتحرر - (4) التحرر من العادة | مع الشيخ/ أمجد سمير",
+                image: "../imgs/v57.png",
+                url: "https://www.youtube.com/watch?v=-W6ijtUgXiU",
+            },
+            {
+                name: "فاهم 56 | سلسلة لازم تتحرر - (3) التحرر من سلوك القطيع | مع الشيخ/ أمجد سمير",
+                image: "../imgs/v56.png",
+                url: "https://www.youtube.com/watch?v=f8croUJLd3Y",
+            },
+            {
+                name: "فاهم 55 | سلسلة لازم تتحرر - (2) التحرر من التفاهة | مع الشيخ/ أمجد سمير",
+                image: "../imgs/v55.png",
+                url: "https://www.youtube.com/watch?v=DdxrQV_bkkY",
+            },
+            {
+                name: "فاهم 54 | سلسلة لازم تتحرر - (1) التحرر من الغفلة | مع الشيخ/ أمجد سمير",
+                image: "../imgs/v54.png",
+                url: "https://www.youtube.com/watch?v=agFMbV32JIc",
+            },
+            {
+                name: "فاهم 53 | أطفالنا والمساجد .. هل علمناهم الصلاة بحق؟ | مع د. شريف طه يونس",
+                image: "../imgs/v53.png",
+                url: "https://www.youtube.com/watch?v=c6cJ9bbEQa0",
+            },
+            {
+                name: "فاهم 52 | كيف تنقذ نفسك من إدمان الإباحية؟ | مع د. محمد عبد الجواد",
+                image: "../imgs/v52.png",
+                url: "https://www.youtube.com/watch?v=NqCQkjgFMqQ&t=14s",
+            },
+            {
+                name: " فاهم 51 | حياة المؤمن كبد أم حياة طيبة؟! | مع د. محمد علي يوسف ",
+                image: "../imgs/v51.png",
+                url: "https://www.youtube.com/watch?v=M-T4nHFCOQ4",
+            },
+        ];
+        let videosSeries = [
+            {
+                name: "السيرة النبوية احمد عامر",
+                image: "../imgs/vs1.png",
+                url: "https://www.youtube.com/watch?v=LI99lWP1zac&list=PLATApN30c4aLXpHzO1GkEb9H0CeXaJFy9",
+            },
+            {
+                name: "قضاء وقدر سمير مصطفى",
+                image: "../imgs/vs2.png",
+                url: "https://www.youtube.com/watch?v=tldDnDX5UKM&list=PLSUcSqxe9RhyS7_hi2I5D7CH2sACsPjFW",
+            },
+            {
+                name: "وعي بودكاست",
+                image: "../imgs/vs3.png",
+                url: "https://www.youtube.com/watch?v=x1XX_S9N4oA&list=PLCpK4282MCT-lBXi4Nodjzq1TDZsK9qwr",
+            },
+            {
+                name: "إيه المشكلة لو مش بنصوم رمضان وليه هو مهم كده؟!",
+                image: "../imgs/vs4.png",
+                url: "https://www.youtube.com/watch?v=sZQx9SHhzI4&list=PLlXQj2VGUTmdUP1KDQ9pkmKJU-KDNOkwt",
+            },
+            {
+                name: "تأسيس وعي المسلم المعاصر ج1 - م/ أيمن عبد الرحيم",
+                image: "../imgs/vs5.png",
+                url: "https://www.youtube.com/watch?v=INUKb-mPiK4&list=PLnFJTGgdQYTNJLSn8ENSzD9qaPz3LypyW",
+            },
+        ];
+        function displayVideo() {
+            let gridContainer = document.getElementById("videosGrid");
+
+            videos.forEach((video) => {
+                let videoitem = document.createElement("div");
+                videoitem.classList.add("video");
+
+                videoitem.innerHTML = `
+          <a href="${video.url}" target="_blank" rel="noopener noreferrer" class="video-link"><img src="${video.image}" alt="${video.name}"></a>
+          <p>${video.name}</p>
+      `;
+
+                gridContainer.appendChild(videoitem);
+            });
+
+            let gridSeriesContainer = document.getElementById("videosseriesGrid");
+
+            videosSeries.forEach((video) => {
+                let videoitem = document.createElement("div");
+                videoitem.classList.add("video");
+
+                videoitem.innerHTML = `
+          <a href="${video.url}" target="_blank" rel="noopener noreferrer" class="video-link overlay"><i class="fa-solid fa-video icon"></i><img src="${video.image}" alt="${video.name}"></a>
+          <p>${video.name}</p>
+          
+      `;
+
+                gridSeriesContainer.appendChild(videoitem);
+            });
+        }
+
+        displayVideo(); // Call function to render Video
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 }, // Small screens (phones)
+                480: { slidesPerView: 3 }, // Slightly larger phones
+                768: { slidesPerView: 4 }, // Tablets
+                1024: { slidesPerView: 6 }, // Small laptops
+                1280: { slidesPerView: 7 }, // Large screens
+                1440: { slidesPerView: 8 }  // Full-size desktops
+            }
+        });
+
+
+        const swiperWrapper = document.querySelector(".swiper-wrapper");
+
+
+        if (swiperWrapper) {
+
+            books.forEach((book) => {
+                let slide = document.createElement("div");
+                slide.classList.add("swiper-slide");
+
+                slide.innerHTML = `
+                    <div class="img-holder">
+                        <img src="${book.image}" alt="${book.name}" onerror="this.src='./img/default.png'"/>
+                    </div>
+                    <div class="book-content">
+                        <p>${book.name}</p>
+                        <a class="btn" href="${book.url}" target="_blank" rel="noopener noreferrer">المزيد</a>
+                    </div>
+                `;
+                swiperWrapper.appendChild(slide);
+            });
+            swiper.update();
+        }
+        var swiper2 = new Swiper(".mySwiper2", {
+            pagination: {
+                el: ".swiper-pagination2",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+        });
+
+
+
+    </script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html

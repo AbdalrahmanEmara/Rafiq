@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiq</title>
+    <link rel="icon" href="images/title.png" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body dir="rtl">
+    <!-- navbar -->
+    <header>
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="../index.html"><img src="../imgs/11.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class=" flex-between ">
+                    <li><a href="dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="المرايات.html">المرئيات</a></li>
+                    <li><a href="books.html">الكتب المترجمة</a></li>
+                </ul>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- toggle -->
+        <ul class="dropdown-menu">
+            <li><a href="dayRules.html">النهج المحمدي</a></li>
+            <li><a href="اذكارالصباح.html">الأذكار</a></li>
+            <li><a href="todo.html">قائمة المهام اليومية</a></li>
+            <li><a href="المرايات.html">المرئيات</a></li>
+            <li><a href="books.html">الكتب المترجمة</a></li>
+        </ul>
+    </header>
+    <div class="books">
+        <div class="container">
+            <div class="title ">
+                <h1 class="main-title">الكتب المترجمة <i class="fa-solid fa-mosque"></i></p>
+            </div>
+            <div class="books-grid" id="booksGrid"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="footer-logo"><span>رفيق</span></div>
+                <div class="links">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <p>اجعل رمضانك مختلفًا هذا العام وسِر على خطى المصطفى ﷺ يومًا بيوم. ابدأ رحلتك الايمانيه مع "رفيق" وكن
+                    أقرب إلى الله في
+                    كل
+                    لحظة
+                </p>
+            </div>
+            <div class="col">
+                <h3>
+                    عن رفيق
+                </h3>
+                <ul>
+                    <li><a href="pages/dayRules.html">النهج المحمدي</a></li>
+                    <li><a href="pages/اذكارالصباح.html">الأذكار</a></li>
+                    <li><a href="pages/todo.html">قائمة المهام اليومية</a></li>
+                    <li><a href="pages/المرايات.html">المرئيات</a></li>
+                    <li><a href="pages/books.html">الكتب المترجمة</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>
+                    المزيد
+                </h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصيه</a></li>
+                    <li><a href="#">سياسات ملفات الارتباط</a></li>
+                    <li><a href="#">خدمات اخرى</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class=" copy">
+            <h5><span>رفيق</span> جميع الحقوق محفوظة © 2025</h5>
+        </div>
+    </footer>
+    <script src="../JS/main.js"></script>
+
+
+    <script>
+let books1 = [
+  {
+    name: "مباحث في أصول الدين",
+    image: "../imgs/1.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/do5UqLso9w11kvAs6fMsQUuBoQX06xebtX10ekxE.pdf",
+  },
+  {
+    name: "أسماء الله وصفاته",
+    image: "../imgs/2.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/Q7Dx2ww1JWl8NY5cSNTqyhJVI7Yyfks7ePcuzutZ.pdf",
+  },
+  {
+    name: "الإبداع في كمال الشرع",
+    image: "../imgs/3.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/OZoao0IWxhhe3YksNNBC7I7P8T0CRsw3bhI0geMt.pdf",
+  },
+  {
+    name: "التمسك بالسنة",
+    image: "../imgs/4.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/feEwev0UUHiAmTu44G4RUUE1tlNiJ0FJmmUZmJCi.pdf",
+  },
+  {
+    name: "الخلاف بين العلماء",
+    image: "../imgs/5.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/j88YUnmizlnSdsfKgLlp8XesJNlaqfBzvpeAdG4j.pdf",
+  },
+  {
+    name: "مكارم الأخلاق",
+    image: "../imgs/6.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/2TSIEsiymWdSHNNTasU5ZLfKi9mYrtv0el44bdQh.pdf",
+  },
+  {
+    name: "من الأحكام الفقهية في الطهارة  ",
+    image: "../imgs/7.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/h6GCK7mectZvd9oEyqSBcxUxFoTiazomb3MrfIRb.pdf",
+  },
+  {
+    name: "ستون سؤالا في أحكام الحيض ",
+    image: "../imgs/8.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/udjv4bLWNVb3AbORgXOOAA0bdjWlknisUazsp7Dt.pdf",
+  },
+  {
+    name: "رسالة في مواقيت الصلاة",
+    image: "../imgs/9.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/U4YtC46myREiRGBTt6IF8KeJhAt12Y3aKhCQ8SD4.pdf",
+  },
+  {
+    name: " رسالة في سجود السهو",
+    image: "../imgs/10.png",
+    url: "https://shekhcp.binothaimeen.net/storage/translated-books/2024-09-08/zgcKXDJ1lBKl5g69PdOrsVZ59Vfr6l055iocA5vk.pdf",
+  },
+];
+function displayBooks() {
+    let gridContainer = document.getElementById("booksGrid");
+    
+
+    books1.forEach(book => {
+        let bookItem = document.createElement("div");
+        bookItem.classList.add("book");
+
+        bookItem.innerHTML = `
+            <img src="${book.image}" alt="${book.name}">
+            <p>${book.name}</p>
+            <a class="btn" href="${book.url}">المزيد</a>
+        `;
+
+        gridContainer.appendChild(bookItem);
+    });
+}
+
+displayBooks(); // Call function to render books
+    </script>
+    
+</body>
+
+</html
